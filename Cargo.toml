@@ -1,0 +1,36 @@
+[package]
+name = "skima"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.100"
+description = "High-efficiency Rust GUI & incremental axis-factored layout engine with native Vulkan 1.3 ReBAR + Dual-Source ClearType rendering"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/skima-rs/skima"
+documentation = "https://docs.rs/skima"
+keywords = ["gui", "ui", "layout", "vulkan", "graphics"]
+categories = ["gui", "rendering", "graphics"]
+exclude = ["AGENTS.md", "flake.nix", "flake.lock", "nix/", "rust-release-notes/", "*.mkv"]
+
+[features]
+default = ["window"]
+window = ["dep:winit"]
+
+[dependencies]
+accesskit = "0.24"
+ash = "0.38"
+ash-window = "0.13"
+bytemuck = { version = "1.25", features = ["derive"] }
+raw-window-handle = "0.6"
+rustybuzz = "0.20"
+swash = "0.2"
+winit = { version = "0.30.13", default-features = false, features = ["rwh_06", "wayland", "wayland-dlopen", "x11"], optional = true }
+
+[build-dependencies]
+naga = { version = "25", features = ["wgsl-in", "spv-out"] }
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[lints.cargo]
+unused_dependencies = "warn"

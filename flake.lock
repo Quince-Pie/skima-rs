@@ -1,0 +1,70 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1795234589,
+        "narHash": "sha256-f/VVvxf5RsQgWVhUtefoca5ktVg0DA2bnkMOcmSnozo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2786a2a72088ecf32aea5b3ec52099e6a7cff78f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-intel-darwin": {
+      "locked": {
+        "lastModified": 1795387764,
+        "narHash": "sha256-c2VS34FJxgjfNbfKgh837LzPzx9S2FXTez+Th1iKDZ8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f0b41a99f28c34ffeaff61d4b419afff0516a923",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-26.05-darwin",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-intel-darwin": "nixpkgs-intel-darwin",
+        "rust-nightly": "rust-nightly",
+        "rust-stable": "rust-stable"
+      }
+    },
+    "rust-nightly": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-bDC6rqlxppnolP4yC5wgGB9u4242tgDX6MIUOAU7aU0=",
+        "type": "file",
+        "url": "https://static.rust-lang.org/dist/channel-rust-nightly.toml"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://static.rust-lang.org/dist/channel-rust-nightly.toml"
+      }
+    },
+    "rust-stable": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-IFh9rjEGpLyy7tGABqS6X1oNEZyBEptF4QjbFDDRnY4=",
+        "type": "file",
+        "url": "https://static.rust-lang.org/dist/channel-rust-stable.toml"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://static.rust-lang.org/dist/channel-rust-stable.toml"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
