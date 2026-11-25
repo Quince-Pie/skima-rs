@@ -2,6 +2,10 @@
 
 **High-efficiency Rust GUI & Incremental Axis-Factored Layout Engine (`IALE`)** co-designed around **Rust 1.100.0 (Edition 2024)** ownership, lifetimes, and RAII — with **Automatic Fractional HiDPI Scaling (`ScalePolicy::Auto`)**, native **Vulkan 1.3 ReBAR + Hardware Dual-Source ClearType** rendering, and **0 B steady-state heap allocation** across scale resolution, layout, vector rasterization, and GPU/CPU frame updates.
 
+
+> [!NOTE]
+> this is a slopware. it's only a test to see how AI can perform when prompted to create a gpu UI library.
+
 ---
 
 ## Why `skima`?
